@@ -21,6 +21,7 @@ browser.get(url)
 # print(button)
 
 # 根据 xpath 语句来获取对象
+# xpath基础语法：//div[@id='product-operation']//div[@class='product-buttonmain']//div[@id='pro-operation']/a
 # button = browser.find_elements(By.XPATH, "//input[@id='su']")
 # print(button)
 

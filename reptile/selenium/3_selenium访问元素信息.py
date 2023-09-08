@@ -10,13 +10,13 @@ from selenium.webdriver.common.by import By
 browser = webdriver.Chrome()
 
 # 访问网站
-url = "https://www.baidu.com"
+url = "https://www.bilibili.com/"
 browser.get(url)
 
 # 元素定位
 
 # 根据 ID 查找
-button = browser.find_element(By.LINK_TEXT, "新闻")
+button = browser.find_element(By.LINK_TEXT, "首页")
 # 获取元素属性
 print(button.get_attribute('class'))
 # 获取元素文本

@@ -15,7 +15,7 @@ url = "https://www.baidu.com"
 browser.get(url)
 
 # 获取网页源码
-print(browser.page_source)
+# print(browser.page_source)
 
 time.sleep(2)
 
@@ -27,6 +27,7 @@ time.sleep(2)
 
 # 按钮点击
 button = browser.find_element(By.ID, "su")
+print(button)
 button.click()
 time.sleep(2)
 

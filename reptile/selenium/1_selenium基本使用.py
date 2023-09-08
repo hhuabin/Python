@@ -7,8 +7,11 @@ from selenium import webdriver
 # path = "chromedriver.exe"
 browser = webdriver.Chrome()
 
+# chromedriver.exe 下载
+# http://chromedriver.storage.googleapis.com/index.html
+
 # 访问网站
-url = "https://www.taobao.com"
+url = "https://www.vmall.com/index.html"
 
 browser.get(url)
 
