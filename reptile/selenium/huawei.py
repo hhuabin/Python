@@ -19,6 +19,8 @@
 4. 自行登录扫码登录,然后回到本页面,自行选择需要的颜色及版本等 -----important
 
 5. 等待抢购即可
+
+测试:注释掉第99行代码可供测试使用
 """
 
 import time
@@ -94,7 +96,7 @@ def submit_order():
     try:
         submit_order_button = browser.find_element(By.XPATH, submitOrderButtonXpath)
         # 抢购需要解开下面一行代码
-        # submit_order_button.click()
+        submit_order_button.click()
         print(submit_order_button.text)
         print("提交成功...", datetime.now())
     except Exception as e:
