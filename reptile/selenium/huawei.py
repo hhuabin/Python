@@ -6,7 +6,7 @@
 本着开源共享的原则,本代码仅供个人使用,切勿当黄牛扰乱市场
 运行项目准备
 1. 准备好 python 运行环境
-2. 需要引入 selenium 爬虫插件
+2. 需要引入 selenium 爬虫插件，有反馈说新版本的包有问题的。我的用是 4.1.3
 3. 需要下载 chromedriver.exe，并且匹配本地谷歌浏览器版本,与本文件同目录即可
     (本目录下的 chromedriver.exe 适配 Chrome 116 版本,可以选择下载)
 4. 前三点准备好即可运行本项目
@@ -32,7 +32,7 @@ from selenium.webdriver.common.by import By
 
 # 开始抢购时间，建议提前一两秒开始抢购
 purchaseTime = "2023-10-10 18:07:58"
-# mate60pro 购买网址
+# 华为商城购买页网址。如 mate60pro 购买网址
 url = "https://www.vmall.com/product/10086009079805.html"
 # P60pro 购买网址
 # url = "https://www.vmall.com/product/10086750782673.html"
