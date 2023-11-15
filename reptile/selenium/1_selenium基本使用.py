@@ -9,6 +9,7 @@ browser = webdriver.Chrome()
 
 # chromedriver.exe 下载
 # http://chromedriver.storage.googleapis.com/index.html
+# https://chromedriver.chromium.org/home
 
 # 访问网站
 url = "https://www.vmall.com/index.html"
