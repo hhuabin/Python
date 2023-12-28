@@ -1,27 +1,7 @@
-# @Time : 2023/9/5 16:59
+# @Time : 2023/12/27 22:01
 # @Author : bin
-# @File : huawei
+# @File : huawei2
 
-"""
-本着开源共享的原则,本代码仅供个人使用,切勿当黄牛扰乱市场
-运行项目准备
-1. 准备好 python 运行环境
-2. 需要引入 selenium 爬虫插件，有反馈说新版本的包有问题的。我的用是 4.1.3
-3. 需要下载 chromedriver.exe，并且匹配本地谷歌浏览器版本,与本文件同目录即可
-    (本目录下的 chromedriver.exe 适配 Chrome 116 版本,可以选择下载)
-4. 前三点准备好即可运行本项目
-
-操作:
-1. 修改抢购时间 purchaseTime (即第34行代码)
-2. 自定义需要购买的华为商城网址 url (即第36行代码)
-3. 建议提前1-2分钟运行本项目,如08分开始抢购,06分把本项目跑起来
-
-4. 自行登录扫码登录,然后回到本页面,自行选择需要的颜色及版本等 -----important
-
-5. 等待抢购即可
-
-测试:注释掉第99行代码可供测试使用
-"""
 
 import time
 from datetime import datetime
@@ -87,6 +67,10 @@ def buy_now():
         buy_now()
 
 
+# 下单
+buy_now()
+
+
 # 定义提交订单函数
 def submit_order():
     try:
@@ -100,9 +84,6 @@ def submit_order():
         time.sleep(0.05)
         submit_order()
 
-
-# 下单
-buy_now()
 
 # 提交订单
 submit_order()

@@ -10,4 +10,7 @@ import time
 #                  f"//tr[@id={trainId}]//td[@class='no-br']//a[@class='btn72']"
 #
 # print(subscribeXPath)
-print(datetime.now().timestamp())
+purchaseTime = "2023-12-27 21:47:00"
+startTime = datetime.strptime(purchaseTime, "%Y-%m-%d %H:%M:%S").timestamp()
+nowTime = datetime.now().timestamp()
+print(startTime - nowTime)
